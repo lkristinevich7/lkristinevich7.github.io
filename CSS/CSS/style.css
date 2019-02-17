@@ -1,0 +1,121 @@
+* {
+    color: red;
+}
+
+/* selector laczany */
+div.connected p
+
+div#connected p {
+    color: rosybrown ;
+}
+
+/* before after (pseudo-elementy) */
+div.connected p::before{
+    content: '123456';
+    color: yellow;
+}
+
+div.connected p::after{
+    content: '7890';
+    color: yellow;
+}
+
+/* Pseoudo-classy */
+.hover a{
+    color: green;
+    text-decoration: none;
+}
+
+.hover a:hover {
+    color: red;
+}
+
+form input:focus {
+    border: 2px solid brown;
+    outline: 0;
+}
+
+ul li:first-child {
+    color: violet;
+}
+
+ul li:last-child{
+    color: aqua;
+}
+
+/* ul li:nth-of-type(3) {
+    color: orange;
+
+} */
+
+ul li:nth-of-type(3n + 2) { 
+    color: orange;
+    /*  b od ktorego zaczynamy
+        a co ktory */
+
+}
+
+/* ul li:nth-last-of-type(even)*/
+/* parzysty +od ostatniego */
+
+
+/* selektory atrybutow */
+input[title]{
+    border: 2px solid violet;
+}
+
+/* z konkretna wartoscia */
+input[title="piaty"]{
+    border: 2px solid aqua;
+}
+
+/* sprawdza czy wystepuje string */
+input[title~="input"] {
+    border: 2px solid orange;
+}
+
+/* czy zawiera ciag znakow */
+input[title*="pi"]{
+    border: 2px solid black;
+}
+
+/* rozpoczyna sie na ciag znakow */
+input[title^="pierw"]{
+    border: 2px solid grey;
+}
+
+/* konczy sie na ciag znakow */
+input[title$="ni"]{
+    border: 2px solid green;
+}
+
+.orange,
+.grey{
+    height: 300px;
+}
+
+.relative{
+    position: relative;
+}
+
+.orange {
+    background-color: orange;
+    position: absolute ;
+    left: 100px;
+    top: 60px;
+}
+
+.grey {
+    background-color: grey;
+}
+
+#main-nav {
+    /* position: fixed; */
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100;
+    background-color: #ffffff;
+
+}
