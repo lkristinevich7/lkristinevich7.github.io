@@ -1,0 +1,47 @@
+form{
+    background-color: black;
+    width: 50%;
+    color: white;
+    padding: 10px;
+}
+
+label{
+    display: block;
+}
+
+input:not([type="radio"]), 
+select, 
+textarea{
+    border: 1px solid whitesmoke;
+    background-color: black;
+    width: 50%;
+    padding: 5px; 
+    color: #ffffff;
+    outline: 0;   
+}
+
+input:focus,
+select:focus,
+textarea:focus { 
+    background-color: darkslategrey;
+    border: 1px solid #ffffff;
+    
+}
+
+
+label[for*="male"],
+label[for="agreement"] {
+    display: inline;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+form input:last-child{
+background-color: darkred;
+width: 30%;
+text-transform: uppercase;
+font-weight: bold;
+}
