@@ -1,0 +1,16 @@
+.first{
+    border: 1px solid grey;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+.second{
+    border: 1px solid grey;
+    padding: 20px;
+  }
+  
+form{
+    background-color:lightcyan;
+    width: 70%;
+    padding: 10px;
+  }

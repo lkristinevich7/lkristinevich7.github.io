@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form autocomplete="on">
+      <h1>A simple form</h1>
+      <h2>Form fundamentals</h2>
+      <div class="first">
+        <h3>Customer info</h3>
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" autofocus required placeholder="Give your name">
+
+        <br>
+        <br>
+        <label for="phone">Telephone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Give your phone number" required pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}">
+
+        <br>
+        <br>
+        <label for="mail">E-mail address:</label>
+        <input type="email" name="_replyto" id="mail" placeholder="Give your e-mail address" required multiple >
+      </div>
+      <div class="second">
+        <h3>Books</h3>
+        <select name="books" id="books">
+          <option value="book1">book1</option>
+          <option value="book2">book2</option>
+          <option value="book3">book3</option>
+          <option value="book4">book4</option>
+          <option value="book5">book5</option>
+        </select>
+
+        <label for="quantity">Quantity (Maximum 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+      </div>
+      
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
