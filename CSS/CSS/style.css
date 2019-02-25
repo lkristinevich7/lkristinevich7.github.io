@@ -205,3 +205,90 @@ input[title$="ni"]{
     overflow: hidden;
 }
 
+/* <!-- transformacje --> */
+#rotate{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    transform: rotate(20deg);
+
+    /* lewy gorny rog  zmiana punktu transformacji
+    transform-origin: 0 0;  */
+}
+
+#translate{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate(100px, 50px);
+
+}
+
+#scale{
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+}
+
+/* #scale img:hover{
+    transform: scale(2);
+}
+
+#scale img{
+    transition: all 0.4s;
+
+} */
+
+#scale img {
+    animation: skaluj;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes skaluj {
+    0%, 100% {
+    transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+}
+
+/* FLEX */
+    #flex{
+        height: 400px;
+        background-color: black;
+        display: flex;
+        /* zeby dzialal flex-shrink, flex-wrap nie moze byc ustawione */
+        /* flex-wrap: wrap; */
+        justify-content: space-evenly;
+        align-content: flex-start;  /* steruje wszystkimi wierszami */
+        /* align-items: steruje itemami !czesciej! */
+
+    }
+
+    .flex-inner{
+        height: 100px;
+        background-color: red;
+        flex-basis: 25%;
+        flex-shrink 1;  /*ustawiamy dla wszystkich elementow */
+    }
+
+    .flex-inner:nth-of-type(5){
+        /* zabierz mijsce jezeli zostalo i poszerz element
+        flex-grow: 1; */
+        flex-shrink: 2;
+        /* domyslana wartosc order=0 */
+        order: 1; 
+        align-self: flex-end;
+
+    }
+
+
+
+
+
+
+
