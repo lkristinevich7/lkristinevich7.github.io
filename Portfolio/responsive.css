@@ -1,0 +1,64 @@
+@media all and (max-width: 992px) and (min-width: 769px){
+    #portfolio figure{
+        flex-basis: 50%;
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 481px){
+    #portfolio figure{
+        flex-basis: 100%;
+    }
+
+    #kontakt form{
+        width: 90%;
+    }
+
+
+}
+
+@media all and (max-width: 480px){
+
+    .menu-label{
+        display: block;
+        text-align: right;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #main-nav{
+        display:block;
+    }
+
+    #main-nav ul{
+        display: none;
+    }
+
+    #main-nav #menu:checked + ul {
+        display: block;
+    }
+
+    #main-nav ul li{
+        display: block;
+        text-align: right;
+    }
+
+    #omnie figure img{
+        width: 70%;
+    }
+
+    #omnie p{
+        width: 90%;
+    }
+
+    #portfolio figure{
+        flex-basis: 100%;
+    }
+    #kontakt form{
+        width: 90%;
+    }
+
+    #kontakt form input,
+    #kontakt form textarea{
+        flex-basis: 100%;
+    }
+}
