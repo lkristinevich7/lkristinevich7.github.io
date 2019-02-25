@@ -1,0 +1,16 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+h1{
+    text-transform: uppercase;
+    /* font-weight: 500; */
+    font-size: 1.2em;
+}
+
+#bigfont{
+    font-size: 1.3em;
+}
+
+
