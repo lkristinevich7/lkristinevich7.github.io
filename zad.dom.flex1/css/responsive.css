@@ -1,0 +1,48 @@
+
+@media all and (min-width: 993px){
+
+    .container-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sec{
+        flex-basis: 80%;
+        order: 1;
+    }
+
+    #a-left{
+        flex-basis: 10%;
+        order: 3;
+    }
+
+    #a-right{
+         flex-basis: 10%;
+         order: 0;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 992px){
+   
+
+    .container-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #sec{
+        flex-basis: 80%;
+    }
+
+    #a-left{
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    #a-right{
+        flex-basis: 20%;
+        order: 2;
+    }
+
+}

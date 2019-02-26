@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+#head, #foot{
+    height: 50px; 
+}
+
+#head{
+    background-color: red;
+}
+
+#sec, aside{
+    height: 200px;
+}
+
+#sec{
+    background-color: blue;
+}
+
+#a-left{
+    background-color: green;
+}
+
+#a-right{
+    background-color: pink;
+}
+
+#foot{
+    background-color: violet;
+}
+
+
+#flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+aside p,
+section p{
+    margin: 0;
+}
