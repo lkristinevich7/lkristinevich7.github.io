@@ -130,6 +130,7 @@ object-fit: cover;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #img1{
