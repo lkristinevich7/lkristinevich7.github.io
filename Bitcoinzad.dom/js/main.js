@@ -32,7 +32,6 @@ $(document).ready(function(){
                 }
 
 
-
                 $('#buy').text(btnData.PLN.buy);
                 $('#sell').text(btnData.PLN.sell);
 
