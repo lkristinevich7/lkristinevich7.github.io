@@ -1,0 +1,23 @@
+.container{
+    width: 50%;
+}
+
+.item h2{
+    border: 2px solid blue;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0;
+    
+
+}
+
+.item p{
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: height 0.6s;
+}
+
+.item .visible{
+    height: 100px;
+}

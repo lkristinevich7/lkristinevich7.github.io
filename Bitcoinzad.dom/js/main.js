@@ -11,26 +11,25 @@ $(document).ready(function(){
             
                 if (currentBuy>btnData.PLN.buy){
                 //$( "i" ).remove();
-                $('#buy').append('<i class="fas fa-arrow-down"></i>');
+                $('#buy-arrow').append('<i class="fas fa-arrow-down"></i>');
                 } else if (currentBuy<btnData.PLN.buy){
                 //$( "i" ).remove();
-                $('#buy').append('<i class="fas fa-arrow-up"></i>'); 
+                $('#buy-arrow').append('<i class="fas fa-arrow-up"></i>'); 
                 } else {
                 //$( "i" ).remove();
-                $('#buy').append('<i class="fas fa-arrows-h"></i>');   
+                $('#buy-arrow').append('<i class="fas fa-arrows-alt-h"></i>');   
                 }
 
                 if (currentSell>btnData.PLN.sell){
                 //$( "i" ).remove();
-                $('#sell').append('<i class="fas fa-arrow-down"></i>');
+                $('#sell-arrow').append('<i class="fas fa-arrow-down"></i>');
                 } else if (currentSell<btnData.PLN.sell){
                 //$( "i" ).remove();
-                $('#sell').append('<i class="fas fa-arrow-up"></i>'); 
+                $('#sell-arrow').append('<i class="fas fa-arrow-up"></i>'); 
                 } else {
                 //$( "i" ).remove();
-                $('#sell').append('<i class="fas fa-arrows-h"></i>');   
+                $('#sell-arrow').append('<i class="fas fa-arrows-alt-h"></i>');   
                 }
-
 
                 $('#buy').text(btnData.PLN.buy);
                 $('#sell').text(btnData.PLN.sell);
@@ -42,3 +41,5 @@ $(document).ready(function(){
     }
     getCourseExchange()
 })
+
+// ready =>funcja zwrotna=> zmienne=> getjson => spraedzam czy sie cena zmienila=> on click=>

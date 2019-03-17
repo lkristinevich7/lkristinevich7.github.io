@@ -1,0 +1,68 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav.nav{
+background-color:  #444;
+color: grey;
+}
+
+.navbar-nav{
+    width: 100%;
+    color: white;
+}
+.item1{ 
+    width: 70%;
+
+}
+
+#section1{
+    background-image: url('https://akademia108.pl/kurs-front-end/form-background.jpg');
+    height: 100vh;
+    background-position: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#section1 .container{
+    padding: 40px;  
+}
+
+
+.form{
+    background-color:  rgba(68,68,68, 0.4);
+    padding:10px;
+}
+
+.header-form{
+    background-color:  rgba(68,68,68, 0.7);
+
+}
+
+input{
+    margin-bottom:10px;
+}
+
+.button-form{
+    color: white;
+    width: 100%;
+    background-color: orange;
+    border: 0;
+    padding: 10px;
+}
+
+.item2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.button1, .button2{
+    margin:10px;
+}

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #c38f42;
+}
+
+p {
+    color: #888888; 
+}
+
+.btn {
+    padding: 15px 20px;
+}
+
+.btn-orange {
+    background-color: #c38f42;
+}
+
+.btn-gray{
+    background-color: rgba(0, 0, 0, 0. 35);
+}
+
+/* Navigation */
+
+.navbar{
+    background-color: #444444;
+}
+
+.navbar .navbar-nav .nav-item,
+.navbar .navbar-brand{
+    background-color: #c2c2c2;
+}
+
+/* Join us */
+
+section.join-us{
+    background-image: url('https://akademia108.pl/kurs-front-end/form-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.join-us .form-container{
+    padding: 0;
+
+}
+
+.join-us form{
+    background-color: rgba(0, 0, 0, 0. 3)
+
+}
+
+.join-us fieldset{
+    padding: 20px;
+}
+
+.join-us header{
+    padding: 20px;
+}
+
+
+
+.join-us .fa-pencil-alt{
+ font-size: 49px;
+}
+
+.join-us form, .join-us form fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us input, .join-us form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+
+.join-us .header-title .fa-pencil-alt{
+    color: #c2c2c2;
+
+}
+
+.join-us .icon-container{
+    padding: 10 0 10 0;
+}
+
+.join-us .fa-pencil-alt{
+    font-size: 49px;
+}
+
+.join-us .content-holder{
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+
+}
+
+.join-us .content-holder{
+    font-size: 36px;
+    font-weight: 700px;
+}
+
+.join-us .content-holder{
+    color: white;
+}
+
+section, footer{
+    padding: 150px;
+}
+
+#inspiration iframe{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.contact .contact-content{
+    
+}
+
+
+
+
+
