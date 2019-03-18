@@ -1,0 +1,36 @@
+.container, h2{
+    text-align: center;
+    font-weight: 100;
+    color: grey;
+}
+
+.container{
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    
+}
+
+.items{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+
+}
+
+.fab{
+    color: orange;
+    font-size: 4em;
+    /* position: absolute; */
+}
+
+hr{
+    width: 20%;
+}
+
+p{
+    margin-top: 20px;
+}
