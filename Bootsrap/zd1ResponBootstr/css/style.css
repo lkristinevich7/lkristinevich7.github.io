@@ -4,12 +4,6 @@
     color: grey;
 }
 
-.container{
-    /* justify-content: center; */
-    /* margin: 0 auto; */
-    
-}
-
 .items{
     height: 100px;
     width: 100px;
@@ -24,7 +18,6 @@
 .fab{
     color: orange;
     font-size: 4em;
-    /* position: absolute; */
 }
 
 hr{
