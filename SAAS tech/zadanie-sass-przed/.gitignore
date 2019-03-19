@@ -4,6 +4,8 @@
 .sass-cache
 .DS_Store
 config.rb
+node_modules
+.gitignore
 
 
 
