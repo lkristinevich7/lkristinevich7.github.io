@@ -1,0 +1,32 @@
+figure{
+    /* height: 250px;
+    width: 300px; */
+    position: relative;
+    border: 0;
+    height: 300px;
+    width: 500px;
+}
+
+img{
+    height:100%;
+    width: 100%;
+}
+
+figure::before{
+    content: '';
+    border-top: 3px solid black;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+
+figure::before{
+    content: '';
+    border-left: 3px solid black;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
