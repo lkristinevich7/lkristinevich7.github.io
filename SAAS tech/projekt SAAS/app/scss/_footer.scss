@@ -1,0 +1,17 @@
+footer{
+    background-color: $dark-color;
+
+.footer-items{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+}
+
+.fas{
+    padding: 10px;
+    background-color: $primary-color;
+    color: $dark-color;
+    font-size: 1.5rem;
+}

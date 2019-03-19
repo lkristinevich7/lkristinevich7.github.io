@@ -6,7 +6,11 @@
 body{
     font-family: 'Lato', sans-serif;
     color: #291f1a;
+    margin: 0;
+}
 
+span{
+    color: lightgreen;
 }
 
 /* Nawigacja */
@@ -52,6 +56,15 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+header h1{
+    font-size: 5em;
+}
+
+header h2{
+    font-size: 2.5em;
+
+}
+
 /* About */
 .about-container{
     display: flex;
@@ -64,8 +77,16 @@ header{
     flex-basis: 50%;
 }
 
-h2{
+#about h2,
+#portfolio h2,
+#skills h2 {
     text-align: center;
+    margin: 5% 0;
+}
+
+#portfolio, #skills{
+    padding: 0 5%;
+
 }
 
 #about .about-container p{
@@ -88,31 +109,6 @@ h2{
     text-align: center;
     margin-bottom: 40px;
 }
-
-
-
-
-/* #portfolio .container-foto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.container-foto figure {
-    flex-basis: 33%;
-    height: 250px;
-    margin:0;
-
-}
-
-.container-foto figure img{
-height: 100%;
-width: 100%;
-object-fit: cover;
-} */
-
-
 
 
 /* Portfolio */
@@ -150,26 +146,48 @@ object-fit: cover;
 
 .hover-element{
     text-align: center;
-    position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     opacity: 0;
-    color: black;
+    color: white;
+    padding: 5%;
+    font-size: 1.2em;
+    font-weight: 100;
     transition: all 0.4s;
-    border: 1px solid pink;
+    border: 0;
+    position: relative;
 }
 
 .img:hover .hover-element{
     opacity: 1;
-    background-color: rgba(0, 123, 255, 0.6);
-
+    background-color: rgba(33, 59, 80, 0.6);
+   
 }
+
+
+
+.img::before{
+    content: '';
+    border: 1px solid white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.img:hover::before{
+    opacity: 1;
+}
+
+
 
 /* Kontakt */
 
 #contact{
+    
   
     /* height: 40vh; */
     background-color: #213b50;
@@ -192,7 +210,7 @@ object-fit: cover;
     #contact h2 {
       text-align: left;
       font-size: 2em;
-      margin: 10% 5%;
+      margin-left: 5%;
       padding-top: 5%;
   
     }
@@ -228,7 +246,7 @@ object-fit: cover;
       justify-content: space-around;
       font-size: 3em;
       width: 30%;
-      margin: 5%;
+      margin-left:5%;
       color: white;
       text-decoration: none;
     }

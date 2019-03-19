@@ -1,0 +1,25 @@
+body {
+  color: #947323; }
+
+nav {
+  background-color: aliceblue; }
+  nav ul li {
+    background-color: crimson; }
+    nav ul li a {
+      color: #f4f263; }
+
+.test button {
+  background-color: turquoise;
+  padding: 40px;
+  font-size: 31px;
+  border: none;
+  border-radius: 4px; }
+  .test button:hover {
+    background-color: orange; }
+
+.test .btn-second {
+  background-color: turquoise;
+  padding: 60px;
+  font-size: 31px;
+  border: none;
+  border-radius: 4px; }

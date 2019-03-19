@@ -1,0 +1,36 @@
+.form-section{
+    background-image: url('../img/background.png');
+    height: 100vh;
+    padding-top: 200px;
+    min-height: 770px; //zeby nie zmniejszyl sie
+}
+
+ &-item{
+     width: 400px;
+
+}
+
+.main-form{
+    background-color: $secondary-color;
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        
+        input:not(type[submit]), textarea{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        input[type=submit]{
+            border: none;
+        }
+        }
+    }
+}
+
+.container{
+    justify-content: flex-end;
+}

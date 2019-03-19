@@ -1,0 +1,9 @@
+@media all and (max-width: 1024px){
+    .img {
+        /* flex-basis: 100%; /width  */ nth: last child
+    }
+
+    /* .hover-element{
+        font-size: 0.5em;
+    } */
+}

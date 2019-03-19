@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $font-family;
+    color: $light-color;
+}
+
+.important-text {
+    color: $primary-color;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    
+}
+
+// .container{
+//     background-image: url(../img/background.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     .container-inner{
+//         width: 75%;
+//         header{
+//             display: flex;
+//             justify-content: space-between;
+//             .header-logo{
+//                 // display: flex;
+//             }
+
+//         }
+//     }
+// }    
