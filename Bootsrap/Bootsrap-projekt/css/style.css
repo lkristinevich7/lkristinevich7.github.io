@@ -4,17 +4,17 @@ body {
 
 nav.nav{
 background-color:  #444;
-color: grey;
+color: white;
 }
 
 .navbar-nav{
     width: 100%;
-    color: white;
 }
-.item1{ 
+
+/* .item1{ 
     width: 70%;
 
-}
+} */
 
 #section1{
     background-image: url('https://akademia108.pl/kurs-front-end/form-background.jpg');
@@ -65,4 +65,10 @@ input{
 
 .button1, .button2{
     margin:10px;
+}
+
+.button1{
+    background-color: orange;
+    color: white;
+    border: 0;
 }
