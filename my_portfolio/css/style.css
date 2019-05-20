@@ -25,7 +25,7 @@ nav #logo{
 /* Header */
 
 #header{
-    background-image: url('img/background.JPG');
+    background-image: url('../img/background.JPG');
     height: 100vh;
     background-size: cover;
     background-position: center;
