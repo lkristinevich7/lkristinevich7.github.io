@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Navigation */
+
+
+nav #logo{
+    height: 50px;
+    margin: 0;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+
+/* Header */
+
+#header{
+    background-image: url('/Users/ludmila/Desktop/my_portfolio/img/blog-3428667_1920.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#header .header-container{
+    margin-top: 9em;
+    
+}
+
+
+#header .header-container h1{
+    font-size: 4.5em;
+    font-weight: 400;
+}
+
+#header .header-container h2{
+    margin-top: 2.6rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+/* About me */
+#about, #skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    text-align: center;
+}
+
+#about img{
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+/* Helpers */
+
+hr{
+    background-color: black;
+    width: 40%;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h4{
+    padding-top: 1%;
+}
+
+/* Skills */
+
+#skills{
+    padding-bottom: 3%;
+}
+
+.items{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #f2f1ed;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.fab{
+    color: black;
+    font-size: 4em;
+}
+
+/* Portfolio */
+
+#portfolio{
+    padding: 5%;
+    background-color:  #f2f1ed;
+    padding-top: 1%;
+
+}
+
+#portfolio .figure{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#portfolio figure{
+   margin: 0;
+   flex-basis: 33%;
+   position: relative;
+   height: 240px;
+}
+
+#portfolio figure img {
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
+}
+
+#portfolio figcaption{
+   position: absolute;
+   opacity: 0;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   color: white;
+   transition: all 0.4s;
+}
+
+
+#portfolio figure:hover figcaption{
+   opacity: 1;
+   background-color: rgba(10, 10, 10, 0.6)
+}
+
+#portfolio figcaption::before{
+    content: '';
+    border: 2px solid white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+}

@@ -12,11 +12,12 @@
     padding: 20px;
     margin: 30px;
     position: relative;
+    margin: 0 auto;
 
 }
 
 .fab{
-    color: orange;
+    color: black;
     font-size: 4em;
 }
 
