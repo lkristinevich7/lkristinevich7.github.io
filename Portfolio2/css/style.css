@@ -168,6 +168,12 @@ span{
    
 }
 
+#portfolio .img:active .hover-element{
+    opacity: 1;
+    background-color: rgba(33, 59, 80, 0.6);
+   
+}
+
 
 
 #portfolio .img::before{
