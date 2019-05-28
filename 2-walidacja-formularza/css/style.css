@@ -1,0 +1,37 @@
+
+form {
+	font-size: 16px;
+	color: #fff;
+	width: 30%;
+	background-color: black;
+	padding: 30px;
+}
+
+input, label {
+	display: inline-block;
+}
+
+input[type='text'], input[type='email'] {
+	height: 20px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background: white;
+    color: black;
+    text-transform: uppercase;
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 18px;
+    font-weight: 700;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #333333;
+}
+
+label {
+	margin-top: 10px;
+}
+
