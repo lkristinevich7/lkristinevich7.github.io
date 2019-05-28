@@ -1,0 +1,25 @@
+@media all and (max-width: 992px) {
+    #main-section .form-content{
+        left: 50%;
+        width: 40%;
+        
+        }
+
+}
+
+@media all and (max-width: 768px) {
+     #main-section .form-content{
+    left: 40%;
+    width: 60%;
+    
+    }
+ 
+}
+
+@media all and (max-width: 480px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

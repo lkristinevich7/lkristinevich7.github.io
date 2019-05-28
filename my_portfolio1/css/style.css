@@ -8,6 +8,32 @@ body {
 
 }
 
+/* Helpers */
+
+hr{
+    background-color: black;
+    width: 40%;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h4{
+    padding-top: 1%;
+}
+
+.fab{
+    color: black;
+    font-size: 4em;
+    transition: all .2s ease-in-out;
+}
+
+.fab:hover{
+    transform: scale(1.2)
+}
+
 /* Navigation */
 
 
@@ -23,6 +49,7 @@ nav #logo{
 
 
 /* Header */
+
 
 #header{
     background-image: url('../img/background.JPG');
@@ -43,17 +70,19 @@ nav #logo{
 
 
 #header .header-container h1{
+    
     font-size: 4.5em;
     font-weight: 400;
 }
 
 #header .header-container h2{
     margin-top: 2.6rem;
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 5rem;
 }
 
 /* About me */
+
 #about, #skills {
     display: flex;
     flex-direction: column;
@@ -69,21 +98,19 @@ nav #logo{
 
 }
 
-/* Helpers */
+#about button{
+    border: 2px solid black;
+    padding: 5px 20px;
+    margin: 5px;
 
-hr{
+}
+
+#about button:hover{
     background-color: black;
-    width: 40%;
+    color: white;
 }
 
-h3{
-    margin-top: 20px;
-    text-align: center;
-}
 
-h4{
-    padding-top: 1%;
-}
 
 /* Skills */
 
@@ -91,7 +118,7 @@ h4{
     padding-bottom: 3%;
 }
 
-.items{
+#skills .items{
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -103,10 +130,7 @@ h4{
 
 }
 
-.fab{
-    color: black;
-    font-size: 4em;
-}
+
 
 /* Portfolio */
 
@@ -114,6 +138,7 @@ h4{
     padding: 5%;
     background-color:  #f2f1ed;
     padding-top: 1%;
+   
 
 }
 
@@ -162,4 +187,68 @@ h4{
     left: 2px;
     bottom: 2px;
     right: 2px;
+}
+
+
+/* Contact form */
+
+#contact{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/computer-1185626_1920.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#contact h3{
+    margin-top: 0;
+    padding-top: 1%;
+}
+
+#contact .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#contact .contact-info{
+    margin: 0 auto;
+    font-size: 1.7rem;
+    
+}
+
+#contact form{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 2%;
+    padding: 2% 2% 0 2%;
+}
+
+#contact input:not([type="submit"]), textarea{
+    width: 100%;
+    
+}
+
+#contact input[type="submit"]{
+    border: 2px solid black;
+   
+    padding: 5px 20px;
+}
+
+
+#contact .caption{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#contact .contact-info a{
+    color: black;
+}
+
+/* Footer */
+
+#footer{
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
 }

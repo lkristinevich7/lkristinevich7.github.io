@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    height: 500px;
+}
+
+/* Header */
+
+#header-container{
+    height: 20%;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#header-container .second-p{
+    font-size: 1.2em;
+}
+
+#header-container .second-p span{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Main-content */
+
+#main-section{
+    background-image: url('../img/The-Chedi-Andermatt-RESTAURANT-Main-Dining-03.jpg');
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Form */
+
+#main-section .form-content{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 30%;
+
+}
+
+#main-section .form-content input:not([type="checkbox"]),
+#main-section .form-content select{
+    width: 100%;
+    border-radius: 25px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#main-section .form-content input[type=submit]{
+    width: 25%;
+    text-transform: uppercase;
+    float: right;
+
+}
+
+#main-section .form-content input[type=submit]:hover{
+    background-color:#7f962f; 
+}
+
+
+
+#main-section .form-content input[type='checkbox']{
+    margin-right: 10px;
+}
+
+#main-section .form-content input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+    }
+
+#main-section .form-content input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: black;
+    content: ' ✔';
+    text-align: center;
+    color: white;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#main-section .form-content .select {
+    position: relative;
+}
+
+#main-section .form-content .select:after {
+    content:"\f0d7";
+    font-family:'Font Awesome 5 Free';
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#main-section .form-content .container-checkbox{
+    display: flex;
+    padding: 10px;
+}
+
+#main-section .form-content label{
+    font-size: 0.6em;
+    color: white;
+    margin-left: 10px;
+}
+
+#main-section .form-content label a{
+    color: lightgreen;
+}
+
+/* Aside */
+
+#aside-section{
+    width: 40%;
+    overflow: scroll;
+    height: 200px;
+    padding: 20px;
+}
+
+/* .aside-content::-webkit-scrollbar-thumb{
+    height: 10px;
+} */
+
+/* #aside-section::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: grey;
+    /* height:50px; */
+
+    
+/* ::-webkit-scrollbar {
+    background: #CCF6ED;
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #21BB9A;
+    border-radius: 4px;
+  } */
+
+  ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  ul li{
+      color: red;
+      text-decoration: none;
+  }
+
+  .error {border: 1px red solid;}
