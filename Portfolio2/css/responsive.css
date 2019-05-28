@@ -29,6 +29,20 @@
 
 @media all and (max-width: 480px){
 
+    #nav{
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav ul {
+        margin-left: -10%;;
+    }
+
+    #nav ul li{
+        width: 100%;
+    }
+
     #about .about-container p{
 
         flex-basis: 90%;
@@ -44,18 +58,18 @@
 
      }
 
-     #nav{
-         height: 100px;
-         justify-content: center;
-         align-items: center;
+     #contact address, #contact h2{
+         text-align: center;
+
      }
 
-     #nav ul {
-         margin-left: -10%;;
+     #contact form{
+         margin-top: 4%;
      }
 
-     #nav ul li{
-         width: 100%;
+     #contact form input[type=submit]{
+         width: 50%;
+         margin-left: 2px;
      }
 
 }
