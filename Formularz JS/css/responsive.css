@@ -22,4 +22,8 @@
         flex-direction: column;
     }
 
+    #main-section .form-content input[type=submit]{
+        width: 40%;
+    }
+
 }
