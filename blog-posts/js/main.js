@@ -2,7 +2,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .then(response => response.json()) //.then(function(response) { return response.json();})
   .then(json => { // .then(function(jsonResponseIbject) { console.log(jsonREsponseObject);})
           
-          json.forEach(elem => {
+              for(let i = 95; i < json.length; i++) {
+              let elem = json[i];
               console.log(elem);
 
               //Stworz div z klasa post
@@ -64,7 +65,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
               });
             })
               
-          })
+          }
             
  
       
