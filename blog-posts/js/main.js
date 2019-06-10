@@ -1,77 +1,91 @@
 fetch('https://jsonplaceholder.typicode.com/posts')
-  .then(response => response.json()) //.then(function(response) { return response.json();})
-  .then(json => { // .then(function(jsonResponseIbject) { console.log(jsonREsponseObject);})
+  .then(response => response.json())
+  .then(json => { 
           
               for(let i = 95; i < json.length; i++) {
               let elem = json[i];
-              console.log(elem);
-
-              //Stworz div z klasa post
-
+              // console.log(elem);
               let singlePostDiv = document.createElement("div");
               singlePostDiv.classList.add('post')
-             /*  let classForDiv = document.createAttribute("class")
-              classForDiv.value = "post" */
-              
-
-              // Stworz h2 i ustaw w nim tekst bedacy wartoscia pola title
 
               let postHeadnig = document.createElement("h2");
               postHeadnig.classList.add('title')
+
               postHeadnig.innerText = elem.title;
-
-              // Stworz p i ustaw w nim tekst bedacy wartoscia pola body
-
               let postContent = document.createElement("p");
               postContent.classList.add('content')
               postContent.innerText = elem.body;
 
               let postLink = document.createElement("a");
               postLink.setAttribute("href", "");
+              postLink.setAttribute("data-id", elem.id);
               postLink.classList.add('link')
-              postLink.innerText = 'Show';
+              postLink.innerText = 'Pokaz komentarze';
 
-
-              // Dodaj h2 i p jako dzieci div.post
               singlePostDiv.appendChild(postHeadnig);
               singlePostDiv.appendChild(postContent);
               singlePostDiv.appendChild(postLink);
               
-              //Doday div.post jako dziecko elementy div$post-list z dokumentu HTML
               document.getElementById('posts-list').appendChild(singlePostDiv);
 
-              postLink.addEventListener("click", function(e){
+              function hideComments(e) {
                 e.preventDefault();
-              
-                console.log('text');
-              fetch('https://jsonplaceholder.typicode.com/comments')
-              .then(response => response.json()) //.then(function(response) { return response.json();})
-              .then(json => {
-                json.forEach(data => {
-                  let postComment = document.createElement("p");
-                  postComment.classList.add('comment')
-                  postComment.innerText = data.body;
-                  singlePostDiv.appendChild(postComment);
 
-                  // if (postComment.style.display = "block") {
-                  //   postComment.style.display = "none";
-                  //   postLink.innerText = "Hide";
-                  // } else {
-                  // postComment.style.display = "block";
-                  // postLink.innerText = "Show";
-                  // }
+                let commentsContainers = document.getElementsByClassName('comments-container');
+                let commentHeadnigs = document.getElementsByClassName('comments-heading');
+  
+                for(let i = 0; i<commentsContainers.length; i++) {
+                  commentsContainers[i].parentElement.removeChild(commentsContainers[i]);
+                  commentHeadnigs[i].parentElement.removeChild(commentHeadnigs[i])
+                }
 
-                })
-              });
-            })
+                postLink.innerText = 'Pokaz komentarze';
+                postLink.removeEventListener('click', hideComments);
+                postLink.addEventListener("click", getComments);
+
+              }
+
+             function getComments(e) {
+                e.preventDefault();
+                let commentHeadnig = document.createElement("h3");
+                commentHeadnig.classList.add('comments-heading');
+                commentHeadnig.innerText = 'Komentarze';
+                singlePostDiv.appendChild(commentHeadnig);
+
+                let commentsContainer = document.createElement("div");
+                commentsContainer.classList.add('comments-container');
+                singlePostDiv.appendChild(commentsContainer);
+                // console.log('test');
+                fetch('https://jsonplaceholder.typicode.com/comments?postId=' + postLink.dataset.id)
+                .then(response => response.json()) 
+                .then(json => {
+                  json.forEach(data => {
+
+                    let emailComment = document.createElement("a");
+                    emailComment.classList.add('email');
+                    emailComment.setAttribute("href", "mailto:" + data.email);
+                    emailComment.innerText = data.email;
+                    commentsContainer.appendChild(emailComment);
+                    
+                    let postComment = document.createElement("p");
+                    postComment.classList.add('comment');
+                    postComment.innerText = data.body;
+                    commentsContainer.appendChild(postComment);
+
+                    
+
+                    postLink.innerText = 'Schowaj komentarze';
+                    postLink.removeEventListener("click", getComments);
+                    postLink.addEventListener('click', hideComments);
+
+                  })
+                });
+              }
+
+              postLink.addEventListener("click", getComments);
               
-          }
-            
- 
-      
+          } 
   });
 
- /*  json.forEach(function(elem){
 
-  }); */
 

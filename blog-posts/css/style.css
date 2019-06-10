@@ -1,0 +1,13 @@
+h1{
+    padding-left: 4%;
+}
+
+.link{
+    float: right;
+}
+
+.post{
+    padding: 4%;
+    border-bottom: 2px solid lightgrey;
+}
+
