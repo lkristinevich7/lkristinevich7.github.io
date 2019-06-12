@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Helpers */
+
+hr{
+    background-color: green;
+    width: 40%;
+}
+
+h3{
+    text-align: center;
+    color: green;
+}
+
+h4{
+    padding-top: 1%;
+}
+
+
+/* Navigation */
+
+
+nav a img{
+    height: 80px;
+    margin: 0;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: yellowgreen;
+}
+
+
+/* Header */
+
+
+#header{
+    background-image: url('../img/smoothie-drink.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 6em; 
+    /* responsive delete  6em*/
+    
+}
+
+
+#header .header-container {
+    margin-left: 55%;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+
+#header .header-container h1{  
+    font-size: 4.5em;
+    font-weight: 400;
+    color: yellowgreen;
+}
+
+#header .header-container h2{
+    margin-top: 2.6rem;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    color: yellowgreen;
+}
+
+#header span{
+    color: green;
+    text-transform: uppercase;
+}
+
+#header a{
+    border: 2px solid greenyellow;
+    padding: 10px 30px;
+    color: green;
+    text-transform: uppercase;
+}
+
+#header a:hover{
+    color: white;
+    background-color: green;
+    border: none;
+    transform: scale(1.2);
+    text-decoration: none;
+    
+}
+
+/* Adavntages */
+
+ #advantages {
+    background-color: #E5FFE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: green;
+    padding: 10% 5%;
+    /* responsive delete padding */
+}
+
+
+#advantages .items{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:yellowgreen;
+    padding: 20px;
+    margin: 30px;
+    margin: 0 auto;
+
+}
+
+#advantages .advantages-content{
+    padding: 3%;
+}
+
+#advantages .icon-custome{
+    color: white;
+    font-size: 3.5em;
+    transition: all .2s ease-in-out;
+}
+
+#advantages .icon-custome:hover{
+    transform: scale(1.2)
+}
+
+/* Sign up form */
+
+#contact{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/contact-image.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    color: white;
+
+}
+
+#contact .contact-container h3{
+    padding-top: 5%;
+    color: white;
+    
+    
+}
+
+#contact .contact-container .contact-text{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+#contact .contact-container form{
+    border: 2px solid white;
+    width: 40%;
+    margin-left: 2%;
+    padding: 2% 2% 0 2%;
+    margin: 0 auto;
+    color: white;
+}
+
+#contact .contact-container form input:not([type="submit"]){
+    background-color: #E5FFE5;
+    width: 100%;
+    
+}
+
+#contact .contact-container form input[type="submit"]{
+    border: 2px solid green;
+    background-color: #E5FFE5;
+    padding: 5px 20px;
+    margin-top: 15%;
+    color: green;
+}
+
+#contact .contact-container form input[type="submit"]:hover{
+    background-color: green;
+    color: white;
+}
+
+
+#contact .contact-container form .caption{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+
+/* Footer */
+
+#footer{
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 0.7rem;
+}

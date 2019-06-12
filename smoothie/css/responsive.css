@@ -1,0 +1,44 @@
+@media all and (max-width: 992px) and (min-width: 769px){
+    #contact{
+        padding-top: 20%;
+    }
+   
+}
+
+@media all and (max-width: 768px) {
+
+    #header .header-container{
+        margin-left: 5%;;
+        color: green;
+        padding-top: 5em;
+    }
+
+    #header .header-container h1{
+        font-size: 5em;
+        color: green;
+    }
+
+    #header .header-container h2{
+        margin-top: 2rem;
+        font-size: 2.5em;
+        color: green;
+    }
+
+    #contact{
+        position: relative;
+    }
+
+    #contact .contact-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+    }
+
+    #contact .contact-container form{
+        width: 100%;
+
+    }
+
+}
