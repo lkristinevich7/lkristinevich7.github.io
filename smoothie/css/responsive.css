@@ -7,21 +7,26 @@
 
 @media all and (max-width: 768px) {
 
+
     #header .header-container{
         margin-left: 5%;;
         color: green;
-        padding-top: 5em;
+        /* padding-top: 5em; */
     }
 
     #header .header-container h1{
-        font-size: 5em;
+        font-size: 3em;
         color: green;
     }
 
     #header .header-container h2{
         margin-top: 2rem;
-        font-size: 2.5em;
+        font-size: 2em;
         color: green;
+    }
+
+    #header a{
+        background-color: white;
     }
 
     #contact{

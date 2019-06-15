@@ -10,8 +10,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
               let postHeadnig = document.createElement("h2");
               postHeadnig.classList.add('title')
-
               postHeadnig.innerText = elem.title;
+
               let postContent = document.createElement("p");
               postContent.classList.add('content')
               postContent.innerText = elem.body;
@@ -55,7 +55,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                 let commentsContainer = document.createElement("div");
                 commentsContainer.classList.add('comments-container');
                 singlePostDiv.appendChild(commentsContainer);
-                // console.log('test');
+                console.log('test');
                 fetch('https://jsonplaceholder.typicode.com/comments?postId=' + postLink.dataset.id)
                 .then(response => response.json()) 
                 .then(json => {
