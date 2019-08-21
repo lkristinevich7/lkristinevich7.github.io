@@ -1,0 +1,152 @@
+@media all and (max-width: 992px) and (min-width: 769px){
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px;
+        background-color: black;  
+    }
+    
+    #advantages h3{
+        margin-top: 5%;
+    }
+   
+    #contact h3{
+        padding-top: 5%;
+    }
+    #contact .contact-text{
+        font-size: 0.9em;
+        text-align: center;
+        margin: 2%;
+    }
+
+    #contact .contact-container form{
+        width: 50%;
+        margin-left: 0;
+    }
+
+    #contact iframe{
+        height: 530px;
+        width: 400px;
+    }
+
+    #contact .contact-container .contact-info .contact-info-container p{
+        padding: 0;
+        margin: 0;
+        font-size: 0.7em;
+    }
+   
+}
+
+@media all and (max-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px;
+        background-color: black;  
+    }
+
+
+    #header .header-container{
+        margin: 5%;;
+    }
+
+    #header .header-container h1{
+        font-size: 3em;
+    }
+
+    #header .header-container h2{
+        margin-top: 2rem;
+        font-size: 2em;
+    }
+
+    #header a{
+        background-color: white;
+        color: black;
+    }
+
+    #about{
+        margin-top: 20%;
+        margin-bottom: 0;
+    }
+
+    #about .container{
+        flex-wrap: wrap;
+    }
+
+    #about .container img{
+        height: 200px;
+        padding-right: 0;
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    #advantages h3{
+        margin-top: 15%;
+    }
+    #advantages .items{
+        height: 70px;
+        width: 70px;
+
+    }
+
+    #advantages .advantages-content{
+        font-size: 0.9em;
+        padding: 1%;
+    }
+
+    #advantages .icon-custome{
+        font-size: 2rem;
+    }
+
+    #advantages table{
+        width: 100%;
+
+    }
+
+    #contact h3{
+        padding-top: 14%;
+    }
+    #contact .contact-text{
+        font-size: 0.9em;
+        text-align: center;
+        margin: 2%;
+    }
+
+
+    #contact .contact-container form{
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    #contact iframe{
+        height: 200px;
+        width: 100vw;
+    }
+
+    #contact .contact-container .contact-info .contact-info-container p{
+        padding: 0;
+        margin: 0;
+        font-size: 0.7em;
+    }
+
+    #footer{
+    display: none;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px;
+        background-color: black;  
+    }
+    
+    #advantages h3{
+        padding-top: 5%;
+
+    }
+    #contact h3{
+        padding-top: 15%;
+    }
+    #header .header-container{
+        font-size: 0.9em;
+    }
+
+}

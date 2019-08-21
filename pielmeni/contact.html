@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fonts Google -->
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
+    <!-- Font awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Custome styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <title>Skontaktuj się z nami lub zamów online!| Pielmeni. </title>
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light nav-color fixed-top" style="background: black">
+    
+      <a href="index.html" class="navbar-left"><img id="logo" src="img/logo.png" alt="Smoothie express logo"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="about.html">O nas</a>
+          <a class="nav-item nav-link" href="price.html">Cennik</a>  
+          <a class="nav-item nav-link" href="contact.html">Kontakt</a>  
+        </div>
+      </div>
+    </nav>
+    
+    <section id="contact">
+      <h3>Kontakt</h3>
+      <hr>
+      <p class="contact-text">Zrob zamowienie online na surowy product</p>
+
+      <div class="contact-container">
+          <form action="index.php" method="post">
+        
+            <label for="name">Podaj imię:</label><br />
+            <input type="text" id="name" name="yourname" class="text" required><br />
+  
+            <label for="email">Podaj numer telefonu:</label><br />
+            <input type="tel" id="tel" name="tel" required><br />
+  
+            <label for="email">Podaj e-mail: </label><br />
+            <input type="email" id="email" name="email" required><br />
+  
+            <label for="email">Podaj ilość(kg):</label><br />
+            <input type="number" name="quantity" min="1" required><br />
+  
+            <label for="email">Podaj adres i uwagi do zamowienia</label><br />
+            <textarea type="text" id="text" name="text" required></textarea><br />
+  
+            <input type="submit" value="Wyślij!">
+            <p class="caption">Dostawę realizujemy wylącznie w Karkowie.</p>
+          
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-info-container">
+              <p>"Pielmeni"</p>
+              <p>tel: +48791684043</p>
+              <p><a href="mailto:lkristinevich7@gmail.com">lkristinevich7@gmail.com</a></p>
+            </div>
+               
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.3080555695237!2d19.992835651088974!3d50.04306027932021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644b93b7e9219%3A0xfb6473c6ccf41113!2sPrzew%C3%B3z+32F%2C+30-716+Krak%C3%B3w!5e0!3m2!1sru!2spl!4v1564238703010!5m2!1sru!2spl" width="700" height="490" frameborder="1" style="border: 5px solid white" allowfullscreen></iframe>
+            </div>
+          </div>
+
+      </div>
+    
+    </section>
+
+    <footer id="footer">
+      <p>Copyright @ Liudmila Krystsinevich</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>

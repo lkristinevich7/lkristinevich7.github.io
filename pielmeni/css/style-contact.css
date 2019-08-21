@@ -1,0 +1,95 @@
+/* Navigation */
+
+nav a img{
+    height: 50px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+}
+
+
+
+/* Sign up form */
+
+#contact{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../img/contact-image.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5%;
+    color: white;
+
+}
+
+#contact  h3{
+    padding-top: 0;
+    color: white;
+    
+    
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact .contact-text{
+    margin-left: 6%;
+    font-size: 1.3em;
+    text-transform: uppercase;
+
+}
+
+#contact .contact-container .contact-info{
+    position: relative;
+}
+
+#contact .contact-container .contact-info .contact-info-container{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    padding: 1%;
+    margin: 3%;
+    color: black;
+}
+
+#contact .contact-container .contact-info .contact-info-container p{
+    padding: 0;
+    margin: 0;
+}
+
+#contact .contact-container form{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 2%;
+    padding: 2% 2% 0 2%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#contact .contact-container form input:not([type="submit"]), textarea{
+    width: 100%;
+    
+}
+
+#contact .contact-container form input[type="submit"]{
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 5%;
+    color: black;
+}
+
+#contact .contact-container form input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+
+
+#contact .contact-container form .caption{
+    margin-top: 5px;
+}
+

@@ -1,0 +1,36 @@
+/* Navigation */
+
+nav a img{
+    height: 50px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.2em;
+}
+
+
+/* About */
+
+#about {
+    background-color: white;
+    color: black;
+    margin-top: 12%;
+    height: 100vh;
+    
+ }
+
+#about .container{
+    display: flex;
+    justify-content: space-between; 
+    
+ }
+
+#about .container img{
+     height: 300px;
+     padding-right: 10px;
+ }
+#about .container p{
+    padding-left: 10px;
+}
+     
