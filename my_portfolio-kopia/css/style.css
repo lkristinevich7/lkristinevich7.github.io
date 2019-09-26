@@ -5,7 +5,6 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    color: black;
 
 }
 
@@ -25,7 +24,7 @@ h4{
     padding-top: 1%;
 }
 
-.fab, .fas{
+.fab{
     color: black;
     font-size: 4em;
     transition: all .2s ease-in-out;
@@ -84,7 +83,7 @@ nav #logo{
 
 /* About me */
 
-#about, #skills, #services{
+#about, #skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,11 +95,6 @@ nav #logo{
 #about img{
     height: 300px;
     border-radius: 50%;
-    transition: all .2s ease-in-out;
-}
-
-#about img:hover{
-    transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
 
@@ -122,23 +116,11 @@ nav #logo{
     font-weight: bold;
 }
 
-#about a{
-    color: black;
-    text-decoration: underline;
-
-}
-
-#about a:hover{
-    color: darkgrey;
-    text-decoration: underline;
-
-}
-
 
 
 /* Skills */
 
-#skills, #services{
+#skills{
     padding-bottom: 3%;
 }
 
@@ -154,12 +136,17 @@ nav #logo{
 
 }
 
+#skills .skills-main-text{
+    padding: 3%;
+    font-weight: bold;
+
+}
 
 
 
 /* Portfolio */
 
-#portfolio, #services{
+#portfolio{
     padding: 5%;
     background-color:  #f2f1ed;
     padding-top: 1%;
@@ -278,5 +265,3 @@ nav #logo{
     font-size: 0.7rem;
     padding-top: 0.7rem;
 }
-
-

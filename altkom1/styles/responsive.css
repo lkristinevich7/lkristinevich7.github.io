@@ -1,0 +1,67 @@
+@media screen and (max-width: 800px){
+    
+    .main-menu-wrapper{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-menu{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-menu li{
+        padding: 5px;
+    }
+
+  
+    .main-container{
+        flex-basis: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+
+    }
+
+    .main-container-aside, .title-section{
+        flex-basis: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+
+    .entry{
+        flex-basis: 40%;
+    }
+
+    .aboutme-image{
+        flex-basis: 80%;
+    }
+    
+    .abotme-content{
+        flex-basis: 80%;
+    }
+
+    .abotme-content .read-more{
+        margin-bottom: 20px;
+    
+    }
+}
+
+@media screen and (max-width: 380px){
+
+    .title-container h1{
+        font-size: 1.7em;
+    }
+    .entry{
+        flex-basis: 90%;
+    }
+
+    .abotme-content .read-more{
+        padding: 10px 5px;
+       
+    
+    }
+
+
+}
+

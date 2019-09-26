@@ -1,6 +1,6 @@
 $(document).ready(function(){
     let heading = $('#about');
-    let skills = $('.items');
+    // let skills = $('.items');
 
     // Header
 
@@ -8,40 +8,32 @@ $(document).ready(function(){
     $('h2').slideUp(0).slideDown(2000);
 
     // About
+    $(document).scroll(function(){
+        heading.animate({margin: '2%'}, 1000, function(){
+            $('.about-text').animate({fontSize: '1.3em'}, 1000);
+        });
+        
 
-
-    heading.animate({margin: '2%'}, 2500, function(){
-        $('.about-text').animate({fontSize: '1.3em'}, 1000); 
     });
 
-    
-
-    // Skills
-
-      $('i').on({ 
-        click: function(){
-            skills.css('background-color', '#604b38');
-        },
-
-        mouseover: function(){
-            $(this).css('color', 'white');
-        }
-    })
-
-
-    // let heading = $('.main-header');
 
     $('#yes').click(function(){
-        $('.about-text').append('<p>My name is Liudmila. I am from Belarus, but live in Cracow.  I am a junior front-end-developer without commercial experience but with fresh knowledges and huge passionate to programming.  I am looking for opportunity to develop my skills working with code and resolve real problems. I a hardworking person with great communication and organizational skills. I am able to competently communicate in three languages Polish, English and Russian and  perfectly organize my time.  I am a highly-motivated  person who is willing to go above and beyond on any project, and to learn valuable skills on my own time.</p>');
+        $('.about-text').append('<p>Hello! My name is Liudmila I am a front-end-developer and I will help you in building your attracive website emphasizing your personality and be helpful to increase your income. I am able to create both static HTML websites and dynamic CMS websites. HTML websites provide a minimum server load and are very fast, but future changes in such websites could be made only by programmist.  Management of CMS websites does not require any special technical knowledges and you could edit it by yourself. Feel free to contact me, I am able to communicate competently in three languages Polish, English and Russian. By the way, I would like to invite you to my <a href="#portfolio">portfolio</a> section to watch some of my works.</p>');
         $( "#yes" ).remove();
         $( "#No" ).remove();
 
     });
 
     $('#No').click(function(){
-        $('#about').append('<img src="img/sad.png" alt="Sad smile">');
+        $('#about').append('<img src="img/sad1.png" alt="Sad smile">');
         $('#my-foto').remove();
         $('.about-text').remove();
+        // $( "#yes" ).remove();
+        $( "#No" ).remove();
+        // $('#yes').click(function(){
+        //     console.log(test)
+        // });
+        $('#about').append('<p>Hello! My name is Liudmila I am a front-end-developer and I will help you in building your attracive website emphasizing your personality and be helpful to increase your income. I am able to create both static HTML websites and dynamic CMS websites. HTML websites provide a minimum server load and are very fast, but future changes in such websites could be made only by programmist.  Management of CMS websites does not require any special technical knowledges and you could edit it by yourself. Feel free to contact me, I am able to communicate competently in three languages Polish, English and Russian. By the way, I would like to invite you to my <a href="#portfolio">portfolio</a> section to watch some of my works.</p>');
         $( "#yes" ).remove();
         $( "#No" ).remove();
 

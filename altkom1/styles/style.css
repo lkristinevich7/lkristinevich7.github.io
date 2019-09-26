@@ -1,0 +1,188 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.main-menu-container{
+    width: 100%;
+    background-color: lightgreen;
+    
+}
+
+.main-menu-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo img{
+    height: 100px;
+}
+
+.main-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.main-menu li{
+    padding: 20px;
+    color: green;
+    font-size: 1.3em;
+}
+
+.main-menu a{
+    text-decoration: none;
+}
+
+.main-menu a:visited{
+    color: green;
+}
+
+
+/* Title */
+
+.title-container h1{
+    color: green;
+    font-size: 2em;
+}
+
+.title-container hr{
+    border-top: 1px solid green;
+    margin-bottom: 30px;
+
+}
+
+
+/* Main section */
+
+.main-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-container{
+    flex-basis: 74.5%;
+}
+
+.main-section-header h1{
+    color: green;
+    font-size: 1.5em;
+}
+
+.main-content img{
+    width: 100%;
+    height: auto;
+}
+
+.main-container-aside{
+    background-color: lightgreen;
+    border: 1px solid green;
+    flex-basis: 25%;
+}
+
+.aside-content{
+    text-align: center;
+}
+.aside-content h2{
+    color: green;
+    
+}
+
+/* Section with entries */
+
+.header-entries h2{
+    text-align: center;
+    padding: 40px 0 10px 0;
+    color: green;
+}
+.entries-section{
+    background-color: lightgray;
+    padding-bottom: 50px;
+}
+
+.entries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.entry{
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    flex-basis: 20%;
+    
+}
+
+.entry img{
+    /* height: 170px; */
+    width: 100%;
+}
+
+.entry h3{
+    color: green;
+}
+
+/* About me */
+
+.aboutme-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    
+    
+}
+
+.aboutme-image{
+    flex-basis: 40%;
+}
+
+.aboutme img{
+    width: 100%;
+    /* margin-right: 20px; */
+    height: 100%;
+
+}
+
+.abotme-content{
+    flex-basis: 40%;
+}
+
+.abotme-content h2{
+    color: green;
+
+}
+
+.abotme-content .read-more{
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid green;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: green;
+
+}
+
+.abotme-content .read-more:visited{
+    color: green;
+}
+
+/* footer */
+
+footer {
+    background-color: lightgreen;
+    padding: 20px 20px;
+    text-align: center;
+    
+}
