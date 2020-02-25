@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.image-container{
+    background-image: url('images/david-marcu-78A265wPiO4-unsplash (1).jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-container .header-container{
+    position: absolute;
+    bottom : 0;
+    color: white;
+    padding: 5%;
+}
+.image-container .date-container{
+    position: absolute;
+    color: white;
+    right: 0;
+    bottom : 0;
+    padding: 5%;
+
+}
+
+#todolist li{
+    /* font-size: 1.2em; */
+    text-decoration: none;
+    padding: 1%;
+    border-bottom: 1px solid lightgrey;
+    font-weight: bold;
+    position: relative;
+    padding-left: 50px;
+
+}
+
+#todolist .checked{
+    text-decoration: line-through;
+    color: grey;
+}
+
+#inputContainer{
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid lightgray;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+#inputValue{
+    width: 90%;
+    border: none;
+    border-top: 1px solid lightgrey;
+    margin: 0 5px;
+    height: 100%;
+    font-size: 1.5em;
+    padding-left: 40px;
+
+}
+
+#inputValue:focus{
+    outline-width: 0;
+
+}
+button.add{
+    font-size: 0.8em;
+    font-weight: 600;
+    width: 10%;
+    height: 100%;
+    margin:0;
+    padding: 10px; 
+    background-color: lightgreen;
+    border: none;
+    outline: 0;
+}
+button.add{
+    cursor: pointer;
+}
+
+.closeElement{
+    float:right;
+    margin-right: 5px;
+}
+/* .closeElement:nth-child(2){
+    float:right;
+    padding: 5px;
+} */
+.checked::before {
+    content: '';
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 7px;
+}
+
