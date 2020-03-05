@@ -21,38 +21,39 @@
     <link rel="stylesheet" href="css/responsive.css">
 
 
-    <title>My portfolio</title>
+    <title>Portfolio.Front end developer</title>
   </head>
   <body>
 
     <!-- Navigation -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light nav-color fixed-top" style="background-color: white">
-    
-      <a href="#" class="navbar-left"><img id="logo" src="img/8d072c91-a540-4521-9528-8d7ab76c700c_200x200.PNG"></a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#about">About me</a>
-          <a class="nav-item nav-link" href="#services">Services</a>
-          <a class="nav-item nav-link" href="#skills">My technology skills</a>
-          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="#contact">Contact me</a>  
+    <nav>
+      <div class="navigation">
+        <a href="#about"><img id="logo" src="img/logo.png" alt="Logo"></a>
+        <a href="#services">Services</a>
+        <a href="#skills">Technical skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        
+        <div class="icon" >
+          <i class="fa fa-bars"></i>
         </div>
       </div>
     </nav>
+    
 
     <!-- Header -->
-
+    
     <header id="header">
+      <canvas></canvas>
       <div class="header-container">
         <h1>Liudmila <span>Kristinevich</span></h1>
         <h2>Front End Developer</h2>
       </div>
+   
     </header>
+  
+   
 
     <!-- About me -->
 
@@ -60,8 +61,7 @@
       <h3>About me</h3>
       <hr>
       <figure> <img id="my-foto"src="img/mypicture.jpg" alt="My foto"></figure>
-    <p class="about-text"><span class="question-about">Would you like to have awesome SEO-optimized website, which help you to increase awareness of your business or fully functional, selling e-commerce website, which can be both a great addition to offline business оr the main source of income? </span></p> <button id="yes">Yes</button><button id="No">No</button>
-            
+      <p>Hello! My name is Liudmila. I am a front-end-developer and I will help you in building your attractive website emphasizing your personality and be helpful to increase your income. I am able to create both static HTML websites and dynamic CMS websites. HTML websites provide a minimum server load and are very fast, but future changes in such websites could be made only by programmer. Management of CMS websites does not require any special technical knowledge and you could edit it by yourself. Feel free to contact me, I am able to communicate competently in three languages Polish, English and Russian. By the way, I would like to invite you to my <a href="#portfolio">portfolio</a> section to watch some of my works.</p>            
     </section>
 
     <!-- Services -->
@@ -135,19 +135,18 @@
         <hr>
         <div class="container">
             <div class="row">
-                
     
                 <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
                     <div>
                        <div class="items"> <i class="fab fa-html5"></i></div>
-                        <p class="skills-text">Advanced. I have a lot of experience using HTML. I am able to write nice and clean, semantic code using best practice of markup language. My knowledges allow me to create page without any libraries and frameworks.</p>
+                        <p class="skills-text">Advanced. I have a lot of experience using HTML. I am able to write nice and clean, semantic code using best practice of markup language. My knowledge allow me to create page without any libraries and frameworks.</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
                   <div>
                      <div class="items"> <i class="fab fa-js"></i></div>
-                      <p class="skills-text">Advanced. I manage to create web-page interactive interactive, use a DOM manipulations, work with events. I am able to use plain JavaScript( Vanilla.JS) or <b>JQuery</b> library depending on a project.</p>
+                      <p class="skills-text">Advanced. I manage to create web-page interactive, use a DOM manipulations, work with events. I am able to use plain JavaScript( Vanilla.JS) or <b>JQuery</b> library depending on a project.</p>
                   </div>
                 </div>
 
@@ -161,7 +160,7 @@
                 <div class="col-md-6 col-sm-6 col-12 d-flex justify-content-center">
                     <div>
                        <div class="items"> <i class="fab fa-bootstrap"></i></div>
-                        <p class="skills-text">Advanced. I am able to deal with the Bootstrap framework, provide responsive layout and apply most of framework features.</p>
+                        <p class="skills-text">Advanced. I am able to deal with the Bootstrap framework, provide responsive layout and apply most of the framework features.</p>
                     </div>
                 </div>
     
@@ -182,24 +181,20 @@
               <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
                 <div>
                    <div class="items"> <i class="fab fa-react"></i></div>
-                    <p class="skills-text">Basic. I have few experience with ReactJS. Able to write very simple application. I am going to improve my skills in the nearest time.</p>
+                    <p class="skills-text">Basic. I have little experience with ReactJS. Able to write very simple application. I am going to improve my skills in the nearest time.</p>
                 </div>
               </div>
 
-                <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
-                  <div>
-                     <div class="items"> <i class="fab fa-sass"></i></div>
-                      <p class="skills-text"> Basic. I am familiar with syntax of the preprocessor. Able to write simple code.</p>
-                  </div>
+              <div class="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+                <div>
+                    <div class="items"> <i class="fab fa-sass"></i></div>
+                    <p class="skills-text"> Basic. I am familiar with syntax of the preprocessor. Able to write simple code.</p>
                 </div>
-
-                
+              </div>                
                     
-                </div>
-            </div>
+        </div>
+      </div>
     </section>
-
-    
 
     <!-- Portfolio -->
 
@@ -207,37 +202,61 @@
       <h3>My portfolio</h3>
       <hr>
       <div class="figure">
-        <figure> <img src="img/tourism-cracow.png" alt="web-page screenshot">
-            <a href="https://kristinevich.000webhostapp.com/" target="_blank"><figcaption><h4>Multi-page website related to tourism </h4>Used technologies: Wordpress, RWD, HTML, CSS, JS.</figcaption></a>
+        <figure> <img src="img/quiz.png" alt="web-page screenshot">
+            <a href="https://lkristinevich7.github.io/new%20quiz/index.html" target="_blank">
+              <figcaption>
+                <h4>JavaScript quiz</h4>
+                <p>Used technologies: JS, HTML, CSS, npm.</p>
+              </figcaption>
+            </a>
         </figure>
-        <figure> <img src="img/inbloom.png" alt="web-page screenshot">
-          <a href="http://sklep-internetowy-inbloom.epizy.com/" target="_blank"><figcaption><h4>Online store selling flowers&bouquets</h4>Used technologies: Wordpress, RWD, HTML, CSS, JS.</figcaption></a>
+        <figure> <img src="img/todolist.png" alt="web-page screenshot">
+          <a href="https://lkristinevich7.github.io/todolist/index.html" target="_blank">
+            <figcaption>
+              <h4>JS to-do-list</h4>
+              <p>Used technologies: JS, HTML, CSS, npm.</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure> <img src="img/shoppingcard.png" alt="web-page screenshot">
+          <a href="https://github.com/lkristinevich7/shopping_card" target="_blank">
+            <figcaption>
+            <h4>JS ES6 shopping card</h4>
+            <p>Used technologies: JS, HTML, CSS, Bootstrap, npm.</p>
+          </figcaption>
+          </a>
+        </figure>
+        <figure> <img src="img/myportfolio.png" alt="web-page screenshot">
+          <a href="https://lkristinevich7.github.io/Portfolio/" target="_blank">
+            <figcaption>
+              <h4>Responsive page portfolio</h4>
+              <p>Used technologies: HTML, CSS, RWD, Bootstrap, PHP.</p>
+            </figcaption>
+          </a>
         </figure>
         <figure> <img src="img/smoothie.png" alt="web-page screenshot">
-          <a href="https://lkristinevich7.github.io/smoothie/" target="_blank"><figcaption><h4>Responsive single one product page</h4>Used technologies: HTML, CSS, RWD.</figcaption></a>
+          <a href="https://lkristinevich7.github.io/smoothie/" target="_blank"><figcaption>
+            <h4>Responsive single one product page</h4>
+            <p>Used technologies: HTML, CSS, RWD.</p>
+          </figcaption>
+        </a>
         </figure>
-        <figure> <img src="img/My portfolo.png" alt="web-page screenshot">
-          <a href="https://lkristinevich7.github.io/Portfolio/" target="_blank"><figcaption><h4>Responsive page portfolio</h4>Used technologies: HTML, CSS, RWD, Bootstrap, JQuery.</figcaption></a>
-        </figure>
-
         <figure> <img src="img/formularzJS1.png" alt="web-page screenshot">
-          <a href="https://lkristinevich7.github.io/Formularz%20JS/" target="_blank"><figcaption> <h4>Responsive form validation</h4>Used technologies: HTML, CSS, RWD, JavaScript.</figcaption></a>
+          <a href="https://lkristinevich7.github.io/Formularz%20JS/" target="_blank">
+            <figcaption> 
+              <h4>Responsive form validation</h4>
+              <p>Used technologies: HTML, CSS, RWD, JavaScript.</p>
+            </figcaption>
+          </a>
         </figure>
-
-        <figure> <img src="img/portfolio1.png" alt="web-page screenshot">
-          <a href="https://lkristinevich7.github.io/Portfolio/" target="_blank"><figcaption><h4>Responsive page portfolio</h4>Used technologies: HTML, CSS, RWD.</figcaption></a>
-        </figure>
-
        </div>     
     </section>
 
     <section id="contact">
       <h3>Contact me</h3>
       <hr>
-
       <div class="contact-container">
-
-      <form action="index.php" method="post">
+      <form action="form.php" method="post">
             
         <label for="name">Your name*</label><br />
     		<input type="text" id="name" name="yourname" class="text"><br />
@@ -268,16 +287,10 @@
     <footer id="footer">
       <p>Copyright @ Liudmila Krystsinevich</p>
     </footer>
-
-    <!-- Optional JavaScript -->
-   
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/index.js"></script>
-
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

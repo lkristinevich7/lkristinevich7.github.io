@@ -36,23 +36,52 @@ h4{
 }
 
 /* Navigation */
-
-
-nav #logo{
-    height: 50px;
-    margin: 0;
+nav{
+    position: relative;
 }
-
-
-.navbar-light .navbar-nav .nav-link {
+.navigation {
+    position: absolute;
+    z-index: 1;
+    top:0;
+    width: 100%;
+    background-color: transparent;
+    
+}
+   
+.navigation a{
+    float: left;
     color: black;
+
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
+.navigation div.icon {
+    line-height: 55px;
+    font-size: 1.5rem;
+    height: 55px;
+    display: none;
+}
+
+.navigation a:first-child{
+    padding: 0;
+
+}
+   
+.navigation a:not(:first-child):hover {
+    background-color: black;
+    color: white;
+}
+
+#logo{
+      height: 55px;
+}
+  
 
 /* Header */
 
-
-#header{
+/* #header{
     background-image: url('../img/background.JPG');
     height: 100vh;
     background-size: cover;
@@ -62,13 +91,30 @@ nav #logo{
     justify-content: center;
     text-align: center;
     
+} */
+#header{
+    display:flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    align-items: center; 
+
 }
 
-#header .header-container{
+.header-container{
+    position: absolute;
+    z-index: 1;
+    /* left: 50%; */
+    /* top: 10%; */
+    /* margin-left:-400px; */
+
+}
+
+/* #header .header-container{
     margin-top: 9em;
     
-}
-
+} */
 
 #header .header-container h1{
     
@@ -77,7 +123,7 @@ nav #logo{
 }
 
 #header .header-container h2{
-    margin-top: 2.6rem;
+    margin-top: 2.8rem;
     font-size: 1.5rem;
     line-height: 5rem;
 }
@@ -153,8 +199,6 @@ nav #logo{
     margin: 0 auto;
 
 }
-
-
 
 
 /* Portfolio */
@@ -278,5 +322,8 @@ nav #logo{
     font-size: 0.7rem;
     padding-top: 0.7rem;
 }
+
+
+
 
 

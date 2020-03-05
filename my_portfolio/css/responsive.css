@@ -1,6 +1,6 @@
 @media all and (max-width: 992px) and (min-width: 769px){
 
-    #header .header-container{
+    /* #header .header-container{
         margin-top: 10em;
         
     }
@@ -12,7 +12,7 @@
     #header .header-container h2{
         margin-top: 2rem;
         font-size: 2.5em;
-    }
+    } */
 
     #portfolio figure{
         flex-basis: 50%;
@@ -29,8 +29,8 @@
    
 }
 
-@media all and (max-width: 768px) and (min-width: 481px){
-    #header .header-container{
+@media all and (max-width: 768px) and (min-width: 600px){
+    /* #header .header-container{
         margin-top: 10em;
         
     }
@@ -42,12 +42,13 @@
     #header .header-container h2{
         margin-top: 2rem;
         font-size: 2.5em;
-    }
+    } */
     
     #portfolio figure{
         flex-basis: 50%;
     }
 
+   
     #contact form{
         width: 50%;
     }
@@ -59,18 +60,43 @@
 
 }
 
-@media all and (max-width: 480px){
-    #header .header-container{
-        margin-top: 5em;
+@media all and (max-width: 600px){
+    /* #header{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../img/background.jpg");
         
+    } */
+
+    /* #header .header-container h1{
+        margin-top: 60px;
+        font-size: 3.5rem;
+    } */
+
+    /* #header .header-container h2{
+        margin-top: 20px;
+    } */
+
+    .navigation a:not(:first-child) {
+        display: none;
+    }
+    .navigation div.icon {
+        float: right;
+        display: block;
+        margin-right: 10px;
     }
 
-    #header .header-container h1{
-        font-size: 3.5em;
+    .navigation.responsive {
+        position: relative;
     }
-
-    #header .header-container h2{
-        margin-top: 15%;
+    .navigation.responsive div.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
     }
 
 
@@ -82,8 +108,9 @@
         flex-basis: 100%;
     }
 
-    #portfolio figcaption{
-        font-size: 0.9rem;
+
+    #portfolio figure:hover figcaption{
+        opacity: 0;
     }
 
     #contact{
@@ -93,14 +120,19 @@
 
     #contact form{
         width: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 10px;
+        padding: 10px;
     }
 
     #contact .contact-info{
-        padding-top: 15%;
-        padding-bottom: 2%;
+        padding-top: 20px;
+        padding-bottom: 15px;
         margin: 0 auto;
     }
 
+    .fa-linkedin{
+        font-size: 4rem;
+    }
+
 }
+
