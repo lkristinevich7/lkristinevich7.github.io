@@ -1,5 +1,4 @@
-let questions=[
-    {
+let questions = [{
         question: 'What is HTML?',
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
         choiceA: 'Correct',
@@ -40,72 +39,81 @@ let choiceC = document.getElementById('choiceC')
 let choiceD = document.getElementById('choiceD')
 let scoreDiv = document.getElementById('score')
 
-let currentQuestion= 0;
+let currentQuestion = 0;
 let lastQuestion = questions.length - 1;
-let score= 0;
+let score = 0;
 
-function renderQuestions(){
+function renderQuestions() {
     let q = questions[currentQuestion];
-    question.innerText=q.question;
-    image.innerHTML="<img src="+ q.image+ ">"
-    choiceA.innerText=q.choiceA;
-    choiceB.innerText=q.choiceB;
-    choiceC.innerText=q.choiceC;
-    choiceD.innerText=q.choiceD;   
+    question.innerText = q.question;
+    image.innerHTML = "<img src=" + q.image + ">"
+    choiceA.innerText = q.choiceA;
+    choiceB.innerText = q.choiceB;
+    choiceC.innerText = q.choiceC;
+    choiceD.innerText = q.choiceD;
 }
 
-start.addEventListener('click', startQuiz)
-function startQuiz(){
-    start.style.display="none"
+start.addEventListener("click", startQuiz)
+
+function startQuiz() {
+    start.classList.add("hidden")
     renderQuestions()
-    quiz.style.display="block"
+    quiz.classList.add("visable")
 }
 
-choiceA.addEventListener('click', function(){ checkAnswer("A")})
-choiceB.addEventListener('click', function(){ checkAnswer("B")})
-choiceC.addEventListener('click', function(){ checkAnswer("C")})
-choiceD.addEventListener('click', function(){ checkAnswer("D")})
+choiceA.addEventListener('click', function () {
+    checkAnswer("A")
+})
+choiceB.addEventListener('click', function () {
+    checkAnswer("B")
+})
+choiceC.addEventListener('click', function () {
+    checkAnswer("C")
+})
+choiceD.addEventListener('click', function () {
+    checkAnswer("D")
+})
 
-function checkAnswer(answer){
-    if(answer==questions[currentQuestion].correct){
+function checkAnswer(answer) {
+    if (answer == questions[currentQuestion].correct) {
         answerIsRight()
         score++
-    }else{
+    } else {
         answerIsWrong()
     }
 
-    if(currentQuestion<lastQuestion){
+    if (currentQuestion < lastQuestion) {
         currentQuestion++
         renderQuestions()
 
-    }else{
+    } else {
         renderScore()
     }
-    
+
 }
 
-function answerIsRight(){
-    document.body.style.backgroundColor=('lightgreen')}
-
-function answerIsWrong(){
-    document.body.style.backgroundColor=('darkred')
+function answerIsRight() {
+    document.body.style.backgroundColor = ('lightgreen')
 }
 
-function renderScore(){
-    document.body.style.backgroundColor=('white')
-    scoreDiv.style.display="block"
-    let newScore= Math.floor(100*score/questions.length)+"%"
-    scoreDiv.innerHTML="<p>Your score is "+newScore+"</p>"
-    scoreDiv.innerHTML+="<button>Retake test</button>"
-    
+function answerIsWrong() {
+    document.body.style.backgroundColor = ('darkred')
+}
+
+function renderScore() {
+    document.body.style.backgroundColor = ('white')
+    scoreDiv.style.display = "block"
+    let newScore = Math.floor(100 * score / questions.length) + "%"
+    scoreDiv.innerHTML = "<p>Your score is " + newScore + "</p>"
+    scoreDiv.innerHTML += "<button>Retake test</button>"
     document.querySelector('button').addEventListener('click', retakeQuiz)
 
 }
 
-function retakeQuiz(){
-    scoreDiv.style.display="none"
-    quiz.style.display="none"
-    currentQuestion= 0;
-    score=0
-    start.style.display="block"
+function retakeQuiz() {
+    scoreDiv.style.display = "none"
+    quiz.style.display = "none"
+    currentQuestion = 0;
+    score = 0
+    start.style.display = "block"
 }

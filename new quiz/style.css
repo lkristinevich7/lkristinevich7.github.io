@@ -121,3 +121,10 @@ html, body{
     border: none;
 }
 
+.hidden{
+    display: none;
+}
+
+.visable{
+    display: block;
+}
