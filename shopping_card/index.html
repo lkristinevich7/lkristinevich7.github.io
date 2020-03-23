@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aplikacja JavaScript</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Produkty</h3>
+        <div id="productsList" class="list-group">
+          <div class="list-group-item">Produkt 1</div>
+          <div class="list-group-item">Produkt 2</div>
+          <div class="list-group-item">Produkt 3</div>
+        </div>
+
+      </div>
+      <div class="col">
+        <h3>Koszyk</h3>
+        <div id="cartView">
+          <div id="cartItemsList" class="cartView_list list-group">
+            <div class="list-group-item">
+              <strong class="product-name">Produkt 1</strong>
+              <div class="product-price">100 zł</div>
+            </div>
+            <div class="list-group-item">
+              <strong class="product-name">Produkt 2</strong>
+              <div class="product-price">100 zł</div>
+            </div>
+            <div class="list-group-item">
+              <strong class="product-name">Produkt 3</strong>
+              <div class="product-price">100 zł</div>
+            </div>
+          </div>
+
+          <div class="cart-total list-group list-group-flush">
+            <div class="list-group-item">
+              <span>Suma produktów</span>
+              <span class="float-right">
+                <strong class="cart-total-amount">0.00</strong>
+                <span> zł</span>
+              </span>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="src/index.js" type="module"></script>
+
+</body>
+
+</html>
