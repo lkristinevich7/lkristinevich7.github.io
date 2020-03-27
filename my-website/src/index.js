@@ -108,3 +108,23 @@ function animate() {
 init()
 
 animate()
+
+//Scroll button
+
+const scroll_button = document.getElementById("scroll_button");
+
+window.addEventListener('scroll', scrollFunction)
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scroll_button.classList.add("visable");
+  } else {
+    scroll_button.classList.remove("visable");
+  }
+}
+scroll_button.addEventListener('click', topFunction)
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

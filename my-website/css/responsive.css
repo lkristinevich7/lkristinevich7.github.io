@@ -1,0 +1,98 @@
+@media all and  (min-width: 600px){
+
+    .fab:hover, .fas:hover{
+        transform: scale(1.2)
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+   
+    #about img{
+        height: 300px;
+    }
+    #about p{
+        font-size: 1.2rem;
+    }
+
+    h3{
+        margin : 10px;
+        text-align: center;
+        font-size: 1.8rem;   
+    }
+
+    #about a{
+        color: #6eacb7;
+        font-size: 1.3rem;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #about a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+
+    .container_items{
+        flex-basis: 50%;
+    }
+
+    #portfolio figure{
+        flex-basis: 45%;
+    }
+    #portfolio figcaption{
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    #portfolio figure:hover figcaption{
+        opacity: 1;
+    }
+
+    #contact{
+        height: 100%;
+
+    }
+
+   #contact form{
+    flex-basis: 50%;
+    margin-left: 2%;
+    padding: 2% 2% 0 2%;
+    } 
+
+    #contact .contact-info{
+        flex-basis: 10%;     
+    }
+
+    .fa-linkedin{
+        font-size: 6rem;
+    }
+}
+
+@media all and (min-width: 800px){
+    .navigation .icon {
+        display: none;
+    }
+
+    .navigation a:not(:first-child) {
+        display: block;
+    }
+
+    .container_items{
+        flex-basis: 33%;
+    }
+
+    #portfolio figure{
+        flex-basis: 30%;
+    }
+
+    #contact form{
+        flex-basis: 40%;
+    } 
+    
+    #contact .contact-info{
+        flex-basis: 40%;
+        font-size: 2rem;
+        margin-left: 100px;
+    }
+
+}
+

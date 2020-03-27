@@ -6,27 +6,27 @@ const resultHeading = document.getElementById('result-heading')
 const single_mealEl = document.getElementById('single-meal')
 
 //Search meal and fetch fro API
-function searchMeal(e){
-    e.preventDefault()
+function searchMeal(e) {
+  e.preventDefault()
 
-    //Clear single meal
-    single_mealEl.innerHTML= '';
+  //Clear single meal
+  single_mealEl.innerHTML = '';
 
-    //Get search term
-    const term = search.value
+  //Get search term
+  const term = search.value
 
-    //Check for empty
-    if(term.trim()){
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
-            .then(res=>res.json())
-            .then(data=>{
-                console.log(data)
-                resultHeading.innerHTML=`<h2> Search result for "${term}":`
+  //Check for empty
+  if (term.trim()) {
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        resultHeading.innerHTML = `<h2> Search result for "${term}":`
 
-                if(data.meals===null){
-                    resultHeading.innerHTML=`<p> There are no search results for "${term}". Try again:`
-                }else{
-                    mealsEl.innerHTML = data.meals.map(meal=>`
+        if (data.meals === null) {
+          resultHeading.innerHTML = `<p> There are no search results for "${term}". Try again:`
+        } else {
+          mealsEl.innerHTML = data.meals.map(meal => `
                     <div class="meal">
                       <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
                       <div class="meal-info" data-mealID="${meal.idMeal}">
@@ -34,14 +34,14 @@ function searchMeal(e){
                       </div>
                     </div>
                   `).join('')
-                }
-            })
+        }
+      })
 
-            //Clear search text
-            search.value=""
-    }else{
-        alert('Please enter a search value')
-    }
+    //Clear search text
+    search.value = ""
+  } else {
+    alert('Please enter a search value')
+  }
 }
 
 // Fetch meal by ID
