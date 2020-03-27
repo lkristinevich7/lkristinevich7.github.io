@@ -122,16 +122,9 @@ random.addEventListener('click', getRandomMeal);
 
 mealsEl.addEventListener('click', e => {
   console.log(e)
-  const mealInfo = e.path.find(item => {
-    if (item.classList) {
-      return item.classList.contains('meal-info');
-    } else {
-      return false;
+  const mealInfo= e.target.closest('[data-mealid]')
+    if(mealInfo){
+      const mealID=mealInfo.dataset.mealid
+      getMealById(mealID);
     }
-  });
-
-  if (mealInfo) {
-    const mealID = mealInfo.getAttribute('data-mealid');
-    getMealById(mealID);
-  }
 });
