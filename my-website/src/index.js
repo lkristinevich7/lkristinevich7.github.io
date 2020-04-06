@@ -128,3 +128,20 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// Auto text
+const text = document.getElementById("text");
+const phrase = "Hire an outstanding web developer";
+let index = 1;
+
+setInterval(writeText, 100);
+
+function writeText() {
+  text.innerText = phrase.slice(0, index)
+
+  index++;
+
+  if (index > phrase.length) {
+    index = 1;
+  }
+
+}

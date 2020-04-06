@@ -11,7 +11,7 @@ productsView.addToCart = (product) => {
   cartView.render()
 }
 
-fetch('http://localhost:3000/products')
+fetch('https://lkristinevich7.github.io/shopping_card/dane.json')
   .then(resp => resp.json())
   .then(products => {
     productsView.loadProducts(products)

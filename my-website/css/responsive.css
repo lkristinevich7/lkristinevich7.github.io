@@ -20,6 +20,11 @@
         font-size: 1.8rem;   
     }
 
+    
+    .navigation div.icon {
+        display: none;
+    }
+
     #about a{
         color: #6eacb7;
         font-size: 1.3rem;
@@ -76,12 +81,24 @@
         display: block;
     }
 
+    #about{
+        padding: 0 150px;
+    }
+
+    .container{
+        box-shadow: 0px 6px 31px -6px rgba(0,0,0,0.75);
+        max-width: 1200px;
+        padding: 30px;
+        margin: 20px;
+    }
+
     .container_items{
-        flex-basis: 33%;
+        flex-basis: 30%;
     }
 
     #portfolio figure{
         flex-basis: 30%;
+        
     }
 
     #contact form{
