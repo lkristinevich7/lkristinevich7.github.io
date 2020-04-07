@@ -3,15 +3,22 @@ export class CartView {
     this.el = document.querySelector(selector)
     this.listEl = this.el.querySelector('.cartView_list')
     this.totalAmountEl = this.el.querySelector('.cart-total-amount')
+    console.log(this.totalAmountEl)
     this.items = []
+    // this.total=0
   }
 
   updateTotal () {
-    const total = this.items.reduce((total, item) => total + item.subtotal, 0)
+    // total = localStorage.getItem('this.items');
+    let total = this.items.reduce((total, item) => total + item.subtotal, 0)
     this.totalAmountEl.innerHTML = total.toFixed(2)
+
+   
+    
   }
 
   addProduct (product) {
+    
     let item = this.items.find(item => {
       return product.id === item.product.id
     })
@@ -29,14 +36,33 @@ export class CartView {
         subtotal
       }
 
+      
+
       this.items.push(item)
+    
     }
     this.updateTotal()
+    localStorage.setItem('this.items', JSON.stringify(this.items));
+    localStorage.setItem('total', this.totalAmountEl.innerHTML);
+    
   }
 
+
+
   render () {
+    const newTotal= localStorage.getItem('total')
+
+    if (newTotal !==null){
+      this.totalAmountEl.innerHTML= newTotal;
+    }
+
     this.listEl.innerHTML = ''
-    this.items
+    let cardItems=[]
+    if(localStorage.getItem('this.items')){
+    
+      cardItems = JSON.parse(localStorage.getItem('this.items'));
+    }
+    cardItems
       .forEach(item => {
         const itemView = new CartItemView(item)
         itemView.appendTo(this.listEl)

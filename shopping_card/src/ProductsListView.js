@@ -7,12 +7,12 @@ export class ProductsListView {
 
   loadProducts (products) {
     this.products = products.products
-    console.log(this.products)
+    // console.log(this.products)
 
   }
 
   addToCart (product) {
-    console.log(product)
+    // console.log(product)
   }
 
   render () {

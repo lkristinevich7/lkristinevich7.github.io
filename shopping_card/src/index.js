@@ -8,6 +8,7 @@ const productsView = new ProductsListView('#productsList')
 
 productsView.addToCart = (product) => {
   cartView.addProduct(product)
+  // console.log(product)
   cartView.render()
 }
 
