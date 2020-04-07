@@ -7,6 +7,8 @@ export class ProductsListView {
 
   loadProducts (products) {
     this.products = products
+    console.log(products)
+
   }
 
   addToCart (product) {

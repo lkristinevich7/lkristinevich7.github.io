@@ -14,6 +14,7 @@ productsView.addToCart = (product) => {
 fetch('https://lkristinevich7.github.io/shopping_card/dane.json')
   .then(resp => resp.json())
   .then(products => {
+    // console.log(products)
     productsView.loadProducts(products)
     productsView.render()
   })
