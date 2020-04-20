@@ -185,8 +185,13 @@ nav {
 #about img {
     height: 200px;
     border-radius: 50%;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     cursor: pointer;
+    transform:scale(0)
+}
+
+#about img.visable_img{
+    transform:scale(1)
 }
 
 #about p {
@@ -229,6 +234,13 @@ nav {
     flex-basis: 100%;
     margin: 10px;
     padding: 10px 20px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.container_items.visable_items{
+    opacity: 1;
+
 }
 
 #skills .items {
@@ -244,7 +256,6 @@ nav {
 }
 
 /* Portfolio */
-
 
 #portfolio,
 #services {
@@ -290,11 +301,9 @@ nav {
     background-color: rgba(110, 172, 183, 0.8)
 }
 
-
 #portfolio figure:hover figcaption {
     opacity: 1;
 }
-
 
 #portfolio figcaption::before {
     content: '';
@@ -306,7 +315,6 @@ nav {
     left: 20px;
     transition: 0.9s ease;
 }
-
 
 #portfolio figcaption::after {
     content: '';
@@ -343,6 +351,63 @@ nav {
     color: rgba(110, 172, 183, 0.8);
 }
 
+/* Pagination */
+
+figure.hide{
+	display: none;
+}
+figure.show{
+	display: block;
+	animation: show .5s ease;
+}
+
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+.pagination{
+	width: 100%;
+	padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+.pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.pagination .page{
+	color:gray;
+}
+.prev, .next{
+ color: #6eacb7;;
+ background-color: transparent;
+ border:2px solid #6eacb7;
+ /* font-size:15px; */
+ font-size: 1.5rem;
+ padding:12px 20px;
+ cursor: pointer;
+}
+.prev:hover, .next:hover{
+    background-color: #6eacb7;
+    color: white;
+}
+
+.pagination .prev.disabled,
+.pagination .next.disabled{
+    border: none;
+    background-color: transparent;
+	color:gray;
+	pointer-events: none;
+}
+
 /* Contact form */
 
 #contact {
@@ -364,11 +429,6 @@ nav {
 
 }
 
-/* #contact .contact-info{
-    margin: 0 auto;
-    font-size: 1.7rem;  
-} */
-
 #contact form {
     border: 2px solid black;
     width: 100%;
@@ -376,12 +436,6 @@ nav {
     padding: 10px;
 
 }
-
-/* #contact form{
-    width: 100%;
-    margin-left: 2%;
-    padding: 2% 2% 0 2%;
-} */
 
 #contact input:not([type="submit"]),
 textarea {
@@ -420,8 +474,6 @@ textarea {
 }
 
 #contact .contact-info {
-    /* padding-top: 5px;
-    padding-bottom: 15px; */
     margin-left: 20px;
     font-size: 1rem;
 
@@ -433,40 +485,4 @@ textarea {
     text-align: center;
     font-size: 0.7rem;
     padding-top: 0.7rem;
-}
-
-
-/* Zaliczenie */
-.position {
-    position: static !important;
-
-}
-
-#tabela {
-    margin: 100px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-table,
-td,
-th {
-    border: 1px solid black;
-}
-
-tr:nth-child(2n) {
-    background-color: seagreen;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-aside {
-    width: 20%;
-    margin: 100px;
-    text-align: center;
 }

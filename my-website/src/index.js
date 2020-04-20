@@ -109,25 +109,44 @@ init()
 
 animate()
 
-//Scroll button
+// scroll contentent
 
+const container_items = document.querySelectorAll(".container_items");
+const img = document.querySelector("#about img");
 const scroll_button = document.getElementById("scroll_button");
 
-window.addEventListener('scroll', scrollFunction)
+window.addEventListener('scroll', appearOnScroll)
+scroll_button.addEventListener('click', topFunction)
 
-function scrollFunction() {
+function appearOnScroll() {
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scroll_button.classList.add("visable");
   } else {
     scroll_button.classList.remove("visable");
   }
+
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    img.classList.add("visable_img");
+  } else {
+    img.classList.remove("visable_img");
+  }
+
+  container_items.forEach(item => {
+    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+      item.classList.add("visable_items");
+    } else {
+      item.classList.remove("visable_items");
+    }
+  })
+
 }
-scroll_button.addEventListener('click', topFunction)
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 // Auto text
 const text = document.getElementById("text");
 const phrase = "Hire an outstanding web developer";
@@ -143,5 +162,60 @@ function writeText() {
   if (index > phrase.length) {
     index = 1;
   }
+}
 
+//Pagination
+
+const portfolioItems = document.querySelector(".porfolio_container").children;
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const page = document.querySelector(".page-num");
+const maxItem = 6;
+let ind = 1;
+
+window.onload = function () {
+  showItems();
+  check();
+}
+
+const pagination = Math.ceil(portfolioItems.length / maxItem);
+console.log(pagination)
+
+prev.addEventListener("click", function () {
+  ind--;
+  check();
+  showItems();
+})
+next.addEventListener("click", function () {
+  ind++;
+  check();
+  showItems();
+})
+
+function check() {
+  if (ind == pagination) {
+    next.classList.add("disabled");
+  } else {
+    next.classList.remove("disabled");
+  }
+
+  if (ind == 1) {
+    prev.classList.add("disabled");
+  } else {
+    prev.classList.remove("disabled");
+  }
+}
+
+function showItems() {
+  for (let i = 0; i < portfolioItems.length; i++) {
+
+    portfolioItems[i].classList.remove("show");
+    portfolioItems[i].classList.add("hide");
+
+    if (i >= (ind * maxItem) - maxItem && i < ind * maxItem) {
+      portfolioItems[i].classList.remove("hide");
+      portfolioItems[i].classList.add("show");
+    }
+    page.innerHTML = ind;
+  }
 }
