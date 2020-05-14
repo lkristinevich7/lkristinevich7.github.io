@@ -179,7 +179,6 @@ window.onload = function () {
 }
 
 const pagination = Math.ceil(portfolioItems.length / maxItem);
-console.log(pagination)
 
 prev.addEventListener("click", function () {
   ind--;
