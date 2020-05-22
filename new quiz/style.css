@@ -24,7 +24,7 @@ html, body{
    
 }
 #start{
-    
+    /* display: none;  */
     width: 400px;
     height: 250px;
     position: absolute;
@@ -119,12 +119,6 @@ html, body{
     padding: 15px 20px;
     margin: 0;
     border: none;
+    cursor: pointer;
 }
 
-.hidden{
-    display: none;
-}
-
-.visable{
-    display: block;
-}

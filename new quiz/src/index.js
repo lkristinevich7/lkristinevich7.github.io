@@ -56,9 +56,10 @@ function renderQuestions() {
 start.addEventListener("click", startQuiz)
 
 function startQuiz() {
-    start.classList.add("hidden")
+    start.style.display = "none"
     renderQuestions()
-    quiz.classList.add("visable")
+    // quiz.classList.remove("hidden")
+    quiz.style.display="block"
 }
 
 choiceA.addEventListener('click', function () {
@@ -105,15 +106,15 @@ function renderScore() {
     scoreDiv.style.display = "block"
     let newScore = Math.floor(100 * score / questions.length) + "%"
     scoreDiv.innerHTML = "<p>Your score is " + newScore + "</p>"
-    scoreDiv.innerHTML += "<button>Retake test</button>"
+    scoreDiv.innerHTML += "<button>Retake quiz</button>"
     document.querySelector('button').addEventListener('click', retakeQuiz)
 
 }
 
 function retakeQuiz() {
+    currentQuestion = 0;
+    score = 0;
     scoreDiv.style.display = "none"
     quiz.style.display = "none"
-    currentQuestion = 0;
-    score = 0
     start.style.display = "block"
 }
