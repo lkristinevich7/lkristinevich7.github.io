@@ -13,7 +13,7 @@ export class ProductsListView {
   }
 
   render () {
-    this.el.innerHTML = ''
+    // this.el.innerHTML = ''
 
     this.products.forEach((product) => {
       const div = this.renderProduct(product)
@@ -35,6 +35,7 @@ export class ProductsListView {
                       class="js-add-to-cart float-right btn btn-success">`
     div.querySelector('.js-add-to-cart')
       .addEventListener('click', (event) => {
+        event.preventDefault();
         this.addToCart(product)
       })
     return div

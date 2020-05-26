@@ -36,7 +36,6 @@ export class CartView {
     this.updateTotal()
     localStorage.setItem('this.items', JSON.stringify(this.items));
     localStorage.setItem('total', this.totalAmountEl.innerHTML);
-
   }
 
   render() {
@@ -47,12 +46,12 @@ export class CartView {
     }
 
     this.listEl.innerHTML = ''
-    let cardItems = []
+    
     if (localStorage.getItem('this.items')) {
 
-      cardItems = JSON.parse(localStorage.getItem('this.items'));
+      this.items= JSON.parse(localStorage.getItem('this.items'));
     }
-    cardItems
+    this.items
       .forEach(item => {
         const itemView = new CartItemView(item)
         itemView.appendTo(this.listEl)
